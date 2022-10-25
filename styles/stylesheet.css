@@ -2,9 +2,11 @@ body{
     background-color: #eDDDD0;
 }
 
+/* Change header font colour */
 h1{
     color: #334259;
 }
+
 
 header{
     background-color: #a6cad4;
