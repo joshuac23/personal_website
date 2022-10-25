@@ -1,16 +1,39 @@
 body{
-    background-color: rgba(111, 117, 115, 0.681);
+    background-color: #eDDDD0;
 }
 
 h1{
-    color:rgb(39, 39, 198);
+    color: #334259;
 }
 
-.nav_bar {
-    background-color: lightblue;
+header{
+    background-color: #a6cad4;
     text-align: center;
 }
 
 #main_header {
     font-family: Montserrat, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    padding: 10px;
+}
+
+footer {
+    background-color: #a6cad4;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    grid-column: 2/3;
 }
