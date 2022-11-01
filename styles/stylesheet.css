@@ -20,11 +20,13 @@ header{
 
 nav {
     display: flex;
+    /* fixme: remove this line for media query for big screens */
+    flex-direction: column;
     justify-content: center;
 }
 
 /* fixme: header nav bar */
-div {
+nav > div {
     padding: 10px;
 }
 
@@ -33,7 +35,7 @@ footer {
     text-align: center;
 }
 
-main {
+.home_text {
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
@@ -55,4 +57,46 @@ h2 {
 /* .season {
     background-color: orange;
     text-align: left;
+} */
+
+.course {
+    border-bottom: 2px solid black;
+}
+
+
+@media screen and (min-width: 600px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        /* border-bottom: 2px solid black; */
+    };
+
+}
+
+@media screen and (min-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    };
+}
+
+@media screen and (min-width: 600px) {
+    .season {
+        grid-row: 2/3;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .description {
+        padding-top: 15px;
+        margin-left: 15px;
+    }
+}
+
+/* @media screen and (min-width: 600px) {
+    .course {
+
+    }
 } */
