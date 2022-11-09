@@ -4,8 +4,10 @@ let courseList = [{code: "ACIT1420", name: "Introduction to Systems Administrati
 
 // Ex 2
 let input = prompt("Enter a 4 digit number: ");
-if (isNaN(Number(input)) || input.length<4) {
+
+while (isNaN(Number(input)) || input.length!=4) {
     console.log("Invalid input")
+    input = prompt("Try again. Enter a 4 digit number: ");
 }
 
 
